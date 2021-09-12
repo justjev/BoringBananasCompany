@@ -40,6 +40,7 @@ install yarn:
     npm install yarn --global
 
 /image_generation has the python code - i have also forked nft-art-generate, which has very clear documentation, and i beleive will work for this contract as well.
+
 /contract has the solidity code for boring bananas co.
 
 to edit contract and website use replace on every file and BE SURE TO CLICK MATCH CASE - this should be enough to differentiate your contract, and website text. The website images would also need to be relinked.
