@@ -31,6 +31,10 @@ Generic steps are below: (to be updated)
 14.advertise your nft
 
 
+Boring Bananas contract is a edited version of Bored Ape Yacht Club, here is a link to compare the contracts on etherscan:
+
+https://etherscan.io/contractdiffchecker?a1=0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D&a2=0xb9ab19454ccb145f9643214616c5571b8a4ef4f2
+
 The website is made with Next.js + Tailwind CSS Example
 
 Type `yarn` on main folder to install the requirements. `yarn dev` to start running on your computer (localhost:3000).
