@@ -1,5 +1,36 @@
 ### Stock Example NFT collection tutorial!
 
+Generic steps are below: (to be updated)
+
+Pick a name, buy a web domain and an email on that domain, you will need it to successfully name your token on etherscan. 
+
+set up ipfs and get keys? still not sure on this one how it works
+
+generate your art and metadata using the ipfs keys
+
+create an infura account
+
+create a new api on infura
+
+create a metamask wallet -SAVE THIS INFORMATION FOREVER. PUT IT ON A PEICE OF STEEL AND KEEP IT IN YOUR SAFE.
+
+buy ethereum and send it to your metamask wallet -not sure how much it takes to launch a contract successfully yet
+
+create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE.
+
+replace all boring bananas text with stock example -matching case - in all files in this repository
+
+build your website - i am still unsure how the javascript works on this for the minting functions
+
+use remixd to compile and deploy your contract- you will use the web3 option to link it to your metamask wallet
+
+go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
+
+launch your website
+
+advertise your nft
+
+
 The website is made with Next.js + Tailwind CSS Example
 
 Type `yarn` on main folder to install the requirements. `yarn dev` to start running on your computer (localhost:3000).
@@ -83,19 +114,4 @@ Fix for IPFS mistake in 2nd video:
 
         json.dump(traits, outfile, indent=4)
 
-Generic steps are below: (to be updated)
 
-Pick a name, buy a web domain and an email on that domain, you will need it to successfully name your token on etherscan. 
-set up ipfs and get keys? still not sure on this one how it works
-generate your art and metadata using the ipfs keys
-create an infura account
-create a new api on infura
-create a metamask wallet -SAVE THIS INFORMATION FOREVER. PUT IT ON A PEICE OF STEEL AND KEEP IT IN YOUR SAFE.
-buy ethereum and send it to your metamask wallet -not sure how much it takes to launch a contract successfully yet
-create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE.
-replace all boring bananas text with stock example -matching case - in all files in this repository
-build your website - i am still unsure how the javascript works on this for the minting functions
-use remixd to compile and deploy your contract- you will use the web3 option to link it to your metamask wallet
-go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
-launch your website
-advertise your nft
