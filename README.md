@@ -8,31 +8,38 @@ Generic steps are below: (to be updated)
 
 3.create asset classes, examples would be eyes, mouths, skintones, shirts. always export them as transparent pngs at 1000x1000
 
-4.set up ipfs and get keys? still not sure on this one how it works
+4.set up ipfs and get a folder- not really sure how yet - desktop installer: https://github.com/ipfs/ipfs-desktop/releases
 
 5.generate your art and metadata using the assets and ipfs keys
 
-6.create an infura account
+6.use pinata to ensure permanence on ipfs - not sure how this works
 
-7.create a new api on infura
+7.create an infura account
 
-8.create a metamask wallet -SAVE THIS INFORMATION FOREVER. PUT IT ON A PEICE OF STEEL AND KEEP IT IN YOUR SAFE.
+8.create a new api on infura
 
-9.buy ethereum and send it to your metamask wallet -not sure how much it takes to launch a contract successfully yet
+9.create a metamask wallet -SAVE THIS INFORMATION FOREVER. PUT IT ON A PEICE OF STEEL AND KEEP IT IN YOUR SAFE.
 
-10.create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE. i will include a blank one
+10.buy ethereum and send it to your metamask wallet -not sure how much it takes to launch a contract successfully yet
 
-11.replace all boring bananas text with stock example -matching case - in all files in this repository
+11.create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE. i will include a blank one
 
-12.build your website - i am still unsure how the javascript works on this for the minting functions
+12.replace all boring bananas text with stock example -matching case - in all files in this repository
 
-13.use remixd to compile and deploy your contract- you will use the web3 option to link it to your metamask wallet
+13.build your website - i am still unsure how the javascript works on this for the minting functions
 
-14.go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
+14.use remixd to compile and deploy your contract- you will use the web3 option to link it to your metamask wallet
 
-15.launch your website
+15.go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
 
-16.advertise your nft
+16.launch your website
+
+17.advertise your nft
+
+
+on windows you will need vsstudio running, and a virtual install of ubuntu
+
+install jupyter notebook, python editor?
 
 
 Boring Bananas contract is a edited version of Bored Ape Yacht Club, here is a link to compare the contracts on etherscan:
