@@ -12,15 +12,21 @@ npm install yarn --global
 to edit contract and website use replace on every file and BE SURE TO CLICK MATCH CASE - this should be enough to differentiate your contract, and website text. The website images would also need to be relinked.
 
 BORINGBANANAS.CO - STOCKEXAMPLE.URL
+
 BoringBananas.Co - StockExample.Url
+
 boringbananas.co - stockexample.url
 
 BANANA - EXAMPLE
+
 Banana - Example
+
 banana - example
 
 BORING - STOCK
+
 Boring - Stock
+
 boring - stock
 
 
@@ -54,16 +60,23 @@ https://twitter.com/dabit3/status/1400784178359189506?s=20
 Fix for IPFS mistake in 2nd video:
 
 with open("traits2.json", 'r') as f:
+
     traits = json.load(f)
+    
 with open("newhashes.json", 'r') as f:
+
     hashes = json.load(f)
 
 
 for key in hashes:
+
     i = int(hashes[key])
+    
     print(key, ":", hashes[key])
+    
     traits[i]["imageIPFS"] = key 
 
 
 with open('finaltraits.json', 'w') as outfile:
+
     json.dump(traits, outfile, indent=4)
