@@ -4,30 +4,32 @@ The website is made with Next.js + Tailwind CSS Example
 
 Type `yarn` on main folder to install the requirements. `yarn dev` to start running on your computer (localhost:3000).
 
-npm install yarn --global
+install yarn:
+
+    npm install yarn --global
 
 /image_generation has the python code - i have also forked nft-art-generate, which has very clear documentation, and i beleive will work for this contract as well.
 /contract has the solidity code for boring bananas co.
 
 to edit contract and website use replace on every file and BE SURE TO CLICK MATCH CASE - this should be enough to differentiate your contract, and website text. The website images would also need to be relinked.
 
-BORINGBANANAS.CO - STOCKEXAMPLE.URL
+    BORINGBANANAS.CO - STOCKEXAMPLE.URL
 
-BoringBananas.Co - StockExample.Url
+    BoringBananas.Co - StockExample.Url
 
-boringbananas.co - stockexample.url
+    boringbananas.co - stockexample.url
 
-BANANA - EXAMPLE
+    BANANA - EXAMPLE
 
-Banana - Example
+    Banana - Example
 
-banana - example
+    banana - example
 
-BORING - STOCK
+    BORING - STOCK
 
-Boring - Stock
+    Boring - Stock
 
-boring - stock
+    boring - stock
 
 
 Extra links:
