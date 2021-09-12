@@ -1,4 +1,4 @@
-### HEYO EXAMPLES!
+### Stock Example NFT collection tutorial!
 
 The website is made with Next.js + Tailwind CSS Example
 
