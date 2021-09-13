@@ -51,9 +51,9 @@ Generic steps are below: (to be updated)
     click upload folder
     
 
-5.generate your art and metadata using the python script in jupyter notebook
+5.generate your art and metadata using the python script in jupyter notebook, this will use the ipsfhash.json file
 
-6.use pinata to ensure permanence on ipfs - not sure how this works
+6.
 
 7.create an infura account
 
@@ -65,17 +65,22 @@ Generic steps are below: (to be updated)
 
 11.create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE. i will include a blank one
 
-12.replace all boring bananas text with stock example -matching case - in all files in this repository
+12.replace all boring bananas text with stock example -matching case - in all files in this repository. set desired price at constant bananaPrice = xxxxxxxxxxxxxxx -google eth to wei for this number. set desired max items at constat MAX_BANANAS = 
+update function withdraw to split payments to multiple parties
 
 13.build your website - i am still unsure how the javascript works on this for the minting functions
 
-14.use remixd to compile and deploy your contract- you will use the web3 option to link it to your metamask wallet
+14.use remixd, compiler version v0.7.6+commit.7338295f to compile (cntrl+s). Choose StockExample (example.sol) (or banana.sol) in the dropdown contract menu. click ABI below the dropdown, copy and paste it into a .json file. test it in your browser, deploying into vm first. deploy your contract- you will use the injected web3 option to link it to your metamask wallet for mainnet. 
 
 15.go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
 
 16.launch your website
 
 17.advertise your nft
+
+18.use etherscan to read/write contract to saleIsActive = true
+
+19.after all sales are complete update provenence hash/lock license
 
 
 on windows you will need vsstudio running, and a virtual install of ubuntu
