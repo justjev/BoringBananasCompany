@@ -48,7 +48,7 @@ Generic steps are below: (to be updated)
     
     you cant upload bigger than 2 gb to ipfs at a time. put files in folders of 225 images each. 
     
-    sign into pinata
+    sign into pinata https://pinata.cloud
     
     click upload folder
     
