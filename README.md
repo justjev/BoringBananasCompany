@@ -2,13 +2,15 @@
 
 Generic steps are below: (to be updated)
 
-1.Pick a name, buy a web domain and an email on that domain, you will need it to successfully name your token on etherscan. 
+1.Pick a name, buy a web domain
 
 2.create a stock 1000x1000 png file with whatever you want your art to look like. this will be your default rules for your assets. 
 
-3.create asset classes, examples would be eyes, mouths, skintones, shirts. always export them as transparent pngs at 1000x1000
+3.create asset classes, examples would be eyes, mouths, skintones, shirts. always export them as transparent pngs at 1000x1000. 
 
-4.use ipfs command line to generate hashs of all files
+4.Generate your art, open jupyter notebook, and the python file in the root. edit asset names and make sure they match folder and file structure. will need to update this with how to layout file structure, and names butshould be self explanetory 
+
+4.use ipfs command line to generate hashs of all image files
 
     on ubuntu virtual machine:
     
@@ -51,9 +53,7 @@ Generic steps are below: (to be updated)
     click upload folder
     
 
-5.generate your art and metadata using the python script in jupyter notebook, this will use the ipsfhash.json file
-
-6.
+5.generate your metadata using the python script in jupyter notebook, this will use the ipsfhash.json file you just made
 
 7.create an infura account
 
@@ -68,19 +68,28 @@ Generic steps are below: (to be updated)
 12.replace all boring bananas text with stock example -matching case - in all files in this repository. set desired price at constant bananaPrice = xxxxxxxxxxxxxxx -google eth to wei for this number. set desired max items at constat MAX_BANANAS = 
 update function withdraw to split payments to multiple parties
 
-13.build your website - i am still unsure how the javascript works on this for the minting functions
+13.build your website - use vsstudio code. put website on on local server to test. use next.js as engine. next.js is owned by vercel. use vercel as host. upload website to github, import to vercel, it automatically deploys it and gives you a link. bind that to your domain. index.js and mint.js are the webpages. they use tailwind css as a library. 
 
-14.use remixd, compiler version v0.7.6+commit.7338295f to compile (cntrl+s). Choose StockExample (example.sol) (or banana.sol) in the dropdown contract menu. click ABI below the dropdown, copy and paste it into a .json file. test it in your browser, deploying into vm first. deploy your contract- you will use the injected web3 option to link it to your metamask wallet for mainnet. 
+    go to your github directory in the command line on vsstudio and enter
+    yarn
+    yarn dev (opens local host server on github page)
+    
 
-15.go to your contract address on etherscan, create account, claim and name your token, upload your contract to verify source
+14.use remixd https://remix.ethereum.org, to open the contract .sol file (banana or example) choose compiler version v0.7.6+commit.7338295f to compile (cntrl+s). Choose StockExample (example.sol) (or banana.sol) in the dropdown contract menu when deploying. click ABI below the dropdown, copy and paste it into a .json file. test it in your browser, deploying into vm first. deploy your contract- you will use the injected web3 option to link it to your metamask wallet for mainnet. 
+
+15.go to your contract address on etherscan, upload your contract source sol file to verify source
 
 16.launch your website
+
+16.use etherscan to set baseuri to your api folder https://stockexample.url/api
 
 17.advertise your nft
 
 18.use etherscan to read/write contract to saleIsActive = true
 
-19.after all sales are complete update provenence hash/lock license
+19.use etherscan _reserveAmount to mint developer tokens
+
+19.after all sales are complete use etherscan to update provenence hash and lock license
 
 
 on windows you will need vsstudio running, and a virtual install of ubuntu
@@ -129,13 +138,7 @@ Extra links:
 
 Remix IDE: https://remix.ethereum.org
 
-IPFS Command line reference: https://docs.ipfs.io/reference/cli/#ipfs-add
-
 Pinata Cloud: https://pinata.cloud
-
-IPFS to Arweave: https://ipfs2arweave.com/
-
-Opensea Metadata Standard: https://docs.opensea.io/docs/metadata-standards
 
 boring bananas used v0.7.6+commit.7338295f to compile their sourcecode, so i am going to do the same, i suggest you do it too.
 
