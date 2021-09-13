@@ -8,7 +8,7 @@ Generic steps are below: (to be updated)
 
 3.create asset classes, examples would be eyes, mouths, skintones, shirts. always export them as transparent pngs at 1000x1000. 
 
-4.Generate your art, open jupyter notebook, and the python file in the root. edit asset names and make sure they match folder and file structure. will need to update this with how to layout file structure, and names butshould be self explanetory 
+4.Generate your art, open jupyter notebook, and the python file in the root. edit asset names and make sure they match folder and file structure. will need to update this with how to layout file structure, and names butshould be self explanetory. make sure you are exporting as jpg. this keeps the file size down without introducting artifacts 
 
 4.use ipfs command line to generate hashs of all image files
 
@@ -63,12 +63,12 @@ Generic steps are below: (to be updated)
 
 10.buy ethereum and send it to your metamask wallet -not sure how much it takes to launch a contract successfully yet
 
-11.create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE. i will include a blank one
+11.create an env file with your infura api key, and your private key. MAKE SURE YOU USE THE GITIGNORE FILE TO IGNORE YOUR ENV FILE. i will include a blank one named STOCKEXAMPLE.env
 
 12.replace all boring bananas text with stock example -matching case - in all files in this repository. set desired price at constant bananaPrice = xxxxxxxxxxxxxxx -google eth to wei for this number. set desired max items at constat MAX_BANANAS = 
 update function withdraw to split payments to multiple parties
 
-13.build your website - use vsstudio code. put website on on local server to test. use next.js as engine. next.js is owned by vercel. use vercel as host. upload website to github, import to vercel, it automatically deploys it and gives you a link. bind that to your domain. index.js and mint.js are the webpages. they use tailwind css as a library. 
+13.build your website - use vsstudio code. put website on on local server to test. use next.js as engine. next.js is owned by vercel. use vercel as host. upload website to github, import to vercel, it automatically deploys it and gives you a link. bind that to your domain. index.js and mint.js are the webpages. they use tailwind css as a library. update config.js with contract address. you will have to get creative and update all artwork and text with your own.
 
     go to your github directory in the command line on vsstudio and enter
     yarn
