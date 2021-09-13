@@ -8,9 +8,50 @@ Generic steps are below: (to be updated)
 
 3.create asset classes, examples would be eyes, mouths, skintones, shirts. always export them as transparent pngs at 1000x1000
 
-4.set up ipfs and get a folder- not really sure how yet - desktop installer: https://github.com/ipfs/ipfs-desktop/releases
+4.use ipfs command line to generate hashs of all files
 
-5.generate your art and metadata using the assets and ipfs keys
+    on ubuntu virtual machine:
+    
+    probably apt-get install ipfs daemon - will find out
+    
+    ipfs daemon - runs a node
+    
+    new window on ubuntu:
+    
+    cd EXAMPLEimages
+    
+    ipfs add -r OUTPUTFOLDER
+    
+    close ipfs daemon -as its just doing local hosting
+    
+    copy, ignoring last hash as that is the folder
+    
+    paste into new file. 
+    
+    using HOTKEY(find from video around 6 or 7 min i think to select all lines make it look like this:
+    
+    {
+    
+    "hashhashhashhashhashhahshahahs"; "0",
+    
+    "hashhashhashhashhashhahshahahs"; "1",
+    
+    ...(etcetera)
+    
+    "hashhashhashhashhashhahshahahs"; "10000",
+    
+    }
+    
+    save file in images as ipsfhash.json (this becomes a dictionary)
+    
+    you cant upload bigger than 2 gb to ipfs at a time. put files in folders of 225 images each. 
+    
+    sign into pinata
+    
+    click upload folder
+    
+
+5.generate your art and metadata using the python script in jupyter notebook
 
 6.use pinata to ensure permanence on ipfs - not sure how this works
 
